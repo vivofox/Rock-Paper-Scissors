@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/toast_bkg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutError"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        >
+
+        <TextView
+            android:id="@+id/textViewError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="user is busy"
+            android:textSize="90sp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+       
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewToastHostUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="host player name"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/imageViewToastHostUserHand"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/r" />
+
+    <TextView
+        android:id="@+id/textViewToastGuestUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="guest player name"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/imageViewToastGuestUserHand"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/s" />
+
+    <TextView
+        android:id="@+id/textViewToastGameResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:text="Game Result"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>
